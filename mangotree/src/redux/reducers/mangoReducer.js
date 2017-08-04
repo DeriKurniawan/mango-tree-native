@@ -1,12 +1,16 @@
 const initialState = {
-    name: '',
-    maxAge: 10,
-    incrementAge: 5,
-    age: 0,
-    harvest: 0
+    age: 0
 }
 
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+const MangoReducer = (state=initialState, action) => {
+    switch(action.type){
+        case 'GROWTH_COUNT':
+            return {
+                age: action.payload.count
+            }
+        default:
+            return state
+    }
 }
 
+export default MangoReducer
