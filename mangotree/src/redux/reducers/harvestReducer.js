@@ -2,7 +2,7 @@ const initialState = {
     harvest: 0
 }
 
-const harvestReducer = (state=initialState, action) => {
+const HarvestReducer = (state=initialState, action) => {
     switch(action.type){
         case 'GET_HARVEST' :
             return {
@@ -13,4 +13,4 @@ const harvestReducer = (state=initialState, action) => {
     }
 }
 
-export default harvestReducer
+export default HarvestReducer

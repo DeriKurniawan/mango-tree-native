@@ -2,7 +2,7 @@ const initialState = {
     name: ''
 }
 
-const userReducer = (state=initialState, action) => {
+const UserReducer = (state=initialState, action) => {
     switch(action.type){
         case 'SET_NAME' :
             return {
@@ -13,4 +13,4 @@ const userReducer = (state=initialState, action) => {
     }
 }
 
-export default userReducer
+export default UserReducer

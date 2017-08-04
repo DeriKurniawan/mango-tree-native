@@ -44,7 +44,9 @@ class Main extends React.Component {
 const Styles = StyleSheet({
     container: {
         flex: 1,
-        background: '#39a087'
+        backgroundColor: '#39a087',
+        alignItems: 'center',
+        justufyContent: 'space-between'
     },
     text: {
         fontweigth: 'bold',
